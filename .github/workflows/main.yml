@@ -13,10 +13,13 @@ jobs:
 
 
     steps:
-      - name: "testing github actions"
+      - name: "testing github actions before"
         run: ls
       
-      
+      - uses: actions/checkout@v3
+
+      - name: "testing github actions after"
+        run: ls
 
 
 
