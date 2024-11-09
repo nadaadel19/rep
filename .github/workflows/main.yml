@@ -13,13 +13,14 @@ jobs:
 
 
     steps:
-      - name: "testing github actions before"
-        run: ls
-      
       - uses: actions/checkout@v3
+      
 
-      - name: "testing github actions after"
-        run: ls
+      # - name: " login to dockerhub"
+      #   env:
+      #     DOCKER_TOKEN: ${{ secrets.DOCKER_TOKEN }}
+      #   run: docker login --username ${{ secrets.DOCKER_USERNAME}} --password ${{ secrets.DOCKER_TOKEN }}
+      
 
 
 
